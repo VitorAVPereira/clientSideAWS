@@ -23,7 +23,7 @@ export default function LoginPage() {
   const loginUser = async (event) => {
     event.preventDefault();
 
-    const res = await fetch('https://aws-deploy-fullstack-app.vercel.app/auth/login', {
+    const res = await fetch('https://rose-dibbler-shoe.cyclic.cloud/auth/login', {
       body: JSON.stringify({
         email: email,
         password: password,

@@ -22,7 +22,7 @@ export default function RegisterPage() {
             return;
         }
 
-        const res = await fetch('https://aws-deploy-fullstack-app.vercel.app/auth/register', {
+        const res = await fetch('https://rose-dibbler-shoe.cyclic.cloud/auth/register', {
             body: JSON.stringify({
                 name: name,
                 email: email,
