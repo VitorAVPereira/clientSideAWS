@@ -5,7 +5,7 @@ import { useEffect } from 'react'; // Importe useEffect
 import { useAuth } from '../src/context/AuthContext.js';
 import { useRouter } from 'next/router';
 
-export default function Index() {
+export default function Contact() {
   const { user } = useAuth();
   const router = useRouter();
 
@@ -17,7 +17,7 @@ export default function Index() {
 
   return (
     <>
-      <HomePage heading='Enjoy your trip!' message='Realize a viagem do seu sonho!'/>
+      <HomePage heading='Em breve form de contato! :)' message='Realize a viagem do seu sonho!'/>
       <div className="md:justify-center sm:justify-center">  
         <Slider slides={SliderData} />
       </div>

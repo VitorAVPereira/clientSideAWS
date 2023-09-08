@@ -19,7 +19,7 @@ const Slider = ({slides}) => {
         return null;
     }
     return (
-        <div id='gallery' className='max-w-[1240px] mx-auto mb-20'>
+        <div id='gallery' className='max-w-[1240px] max-h-[400px] mx-auto mb-20'>
             <div className='relative flex justify-center p-4'>
             {SliderData.map((slide, index) => {
                 return( 
@@ -31,11 +31,11 @@ const Slider = ({slides}) => {
                                 size={50} 
                             />
                             {index === current && (
-                                <Image src={slide.image} alt='' width='1440' height='600'/>
+                                <Image src={slide.image} alt='' width='1240' height='400'/>
                             )}
                             <FaArrowCircleRight 
                                 onClick={nextSlide}
-                                className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]' 
+                                className='absolute top-[50%] right-[30px] text-white/30 cursor-pointer select-none z-[2]' 
                                 size={50} 
                             />
                         </div>
