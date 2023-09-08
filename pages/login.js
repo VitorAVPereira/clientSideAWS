@@ -23,7 +23,7 @@ export default function LoginPage() {
   const loginUser = async (event) => {
     event.preventDefault();
 
-    const res = await fetch('//54.207.212.70:3000/auth/login', {
+    const res = await fetch('https://aws-deploy-fullstack-app.vercel.app/auth/login', {
       body: JSON.stringify({
         email: email,
         password: password,

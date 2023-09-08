@@ -22,7 +22,7 @@ export default function RegisterPage() {
             return;
         }
 
-        const res = await fetch('http://54.207.212.70:3000/auth/register', {
+        const res = await fetch('https://aws-deploy-fullstack-app.vercel.app/auth/register', {
             body: JSON.stringify({
                 name: name,
                 email: email,
