@@ -1,7 +1,7 @@
 import { SliderData } from "../src/components/slider/sliderData.js";
 import Slider from "../src/components/slider/slider.js"; 
 import HomePage from "../src/components/homePage/homePage.js";
-import { useEffect } from 'react'; // Importe useEffect
+import { useEffect } from 'react';
 import { useAuth } from '../src/context/AuthContext.js';
 import { useRouter } from 'next/router';
 
