@@ -12,7 +12,8 @@ export function AuthProvider({ children }) {
 
   // Função para fazer logout do usuário
   const logout = () => {
-    setUser(null);
+    setUser(false)
+    localStorage.clear();
   };
 
   useEffect(() => {
