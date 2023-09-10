@@ -98,12 +98,27 @@ const Navbar = () => {
                     <li className='p-4 text-4xl hover:text-gray-500'>
                         <Link href='/contact'>Contato</Link>
                     </li>
-                    <li className='p-4 mt-1'>
-                        <Link href='/login'>Login</Link>
-                    </li>
-                    <li className='p-4 mt-1'>
-                        <Link href='/register'>Cadastre-se</Link>
-                    </li>
+                    {/* Condicional para exibir itens de menu com base na autenticação */}
+                    {isAuth ? (
+                      <>
+                        <li className='p-4 mt-1'>
+                          <span>Bem-vindo, {username}!</span>
+                        </li>
+                        <li className='p-4'>
+                          <LogoutButton>Sair</LogoutButton>
+                        </li>
+                      </>
+                    ) : (
+                      // Itens de menu para usuários não autenticados
+                      <>
+                        <li className='p-4 mt-1'>
+                          <Link href='/login'>Login</Link>
+                        </li>
+                        <li className='p-4 mt-1'>
+                          <Link href='/register'>Cadastre-se</Link>
+                        </li>
+                      </>
+                    )}
                 </ul>
             </div>
           </div>
