@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { setCookie } from 'cookies-next';
 import Link from 'next/link';
-import styles from '../styles/Form.module.css';
-import FormCard from '../src/components/formCard/formCard';
-import Input from '../src/components/input/input';
-import Button from '../src/components/buttons/button';
-import { useAuth } from '../src/context/AuthContext'; 
+import styles from '../../../styles/Form.module.css';
+import FormCard from '../formCard/formCard';
+import Input from '../input/input';
+import Button from '../buttons/button';
+import { useAuth } from '../../context/AuthContext'; 
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');

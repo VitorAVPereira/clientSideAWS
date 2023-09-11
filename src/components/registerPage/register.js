@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';  
 import Link from 'next/link';
-import styles from '../styles/Form.module.css';
-import FormCard from "../src/components/formCard/formCard";
-import Input from '../src/components/input/input';
-import Button from '../src/components/buttons/button';
+import styles from '../../../styles/Form.module.css';
+import FormCard from "../formCard/formCard";
+import Input from '../input/input';
+import Button from '../buttons/button';
 
 export default function RegisterPage() {
     const [name, setName] = useState('');
