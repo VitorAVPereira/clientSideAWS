@@ -1,5 +1,3 @@
-import { SliderData } from "../src/components/slider/sliderData.js";
-import Slider from "../src/components/slider/slider.js"; 
 import HomePage from "../src/components/homePage/homePage.js";
 import { useEffect } from 'react'; // Importe useEffect
 import { useAuth } from '../src/context/AuthContext.js';
@@ -19,7 +17,8 @@ export default function Contact() {
     <>
       <HomePage heading='Em breve form de contato! :)' message='Realize a viagem do seu sonho!'/>
       <div className="md:justify-center sm:justify-center">  
-        <Slider slides={SliderData} />
+        <h1 className="">Galeria de imagens em breve.</h1>
+        {/* <Slider slides={SliderData} /> */}
       </div>
     </>
   )
